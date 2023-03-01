@@ -21,9 +21,6 @@ body{
     margin: 0;
 }
 
-:-moz-selection{
-    background-color: var(--highlight-color);
-}
 ::selection{
     background-color: var(--highlight-color);
 }
@@ -154,11 +151,11 @@ h3{
     display: none;
 }
 /*
-              MAIN VIDEO
+              VIDEO
 **/
 
 
-.main-video{
+.clip1-video{
     margin-top: 250px;
     transform-origin: 0 0;
     transform: skewY(-10deg);
@@ -167,22 +164,14 @@ h3{
     margin-bottom: 150px;
 }
 
-.main-video .video{
-    overflow: hidden;
-    transform: skewY(10deg) scale(1.4, 1.4);
-}
 
-.main-video .video video{
-    margin-top: -100px;
-    width: 100%;
-}
 /*
-              INTRO
+              HOME
 **/
 
 .intro{
     text-align: center;
-    width: 320px;
+    width: 500px;
     margin: 0 auto;
     margin-top: -100px;
     padding-bottom: 100px;
@@ -319,6 +308,10 @@ footer{
     margin-top: -170px;
 }
 
+footer p {
+    color: #F1F1F1;
+}
+
 
 @keyframes opening-logo{
     0%{
@@ -336,16 +329,9 @@ footer{
     100% {transform: translateY(0);}
 }
 
-@keyframes fade-in{
-    0%{height: 0vh;}
-    50%{height: 150vh;}
-    100%{height: 0vh;}
-}
-
-
 
 @media (max-width: 1450px){
-    .main-video{
+    .clip1-video{
         height: 600px;
     }
 
@@ -358,7 +344,7 @@ footer{
 }
 
 @media (max-width: 1280px){
-    .main-video{
+    .clip1-video{
         height: 400px;
     }
 
@@ -385,6 +371,7 @@ footer{
 }
 
 @media (max-width: 900px){
+   
     .grid .item{
         height: 150px;
     }
@@ -394,12 +381,16 @@ footer{
 }
 
 @media (max-width: 800px){
-    .main-video{
+    .clip1-video{
         height: 200px;
     }
 
-    .main-video .video video{
+    .clip1-video .video video{
         margin-top: 0;
+    }
+
+    .intro {
+        width: 400px;
     }
 
     .grid .item{
@@ -431,14 +422,18 @@ footer{
         display: block;
     }
 
-    .main-video .video video{
+    .clip1-video .video video{
         margin-top: 0;
     }
     
 
-    .main-video{
+    .clip1-video{
         margin-top: 100px;
         height: 150px;
+    }
+
+    .intro {
+        width: 320px;
     }
 
     .grid .item{
